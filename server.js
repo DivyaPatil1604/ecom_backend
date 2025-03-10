@@ -3,7 +3,7 @@ const connectDB=require("./config/db")
 const cors=require('cors')
 const app=express()
 
-const allowedOrigins=["ecom-forntend.vercel.app","ecom-forntend-7t0j0q51k-divya-patils-projects-70b22e19.vercel.app"]
+const allowedOrigins=["ecom-forntend.vercel.app","ecom-forntend-git-main-divya-patils-projects-70b22e19.vercel.app","ecom-forntend-8duh2tq7b-divya-patils-projects-70b22e19.vercel.app"]
 //middlewares
 
 
