@@ -3,17 +3,12 @@ const connectDB=require("./config/db")
 const cors=require('cors')
 const app=express()
 
-const allowedOrigins=[
-    "ecom-forntend.vercel.app",
-    "ecom-forntend-7t0j0q51k-divya-patils-projects-70b22e19.vercel.app"
-
-]
+const allowedOrigins=["ecom-forntend.vercel.app","ecom-forntend-7t0j0q51k-divya-patils-projects-70b22e19.vercel.app"]
 //middlewares
 
 
 app.use(express.json())
-app.use(
-    cors({
+app.use(cors({
         origin: function (origin, callback) {
             if (!origin || allowedOrigins.includes(origin)) {
               callback(null, true);
